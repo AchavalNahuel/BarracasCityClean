@@ -1,0 +1,1481 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BARRACAS CITY CLEAN · Productos de limpieza a domicilio</title>
+    <meta
+      name="description"
+      content="BARRACAS CITY CLEAN — productos de limpieza para el hogar, ropa, pisos y auto. Lista de precios completa. Pedidos por WhatsApp con envío a domicilio."
+    />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23021944%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22white%22>🏠</text></svg>"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --deep: #021944;
+        --purple-900: #020f34;
+        --purple-700: #0467c5;
+        --purple-600: #0687db;
+        --purple-500: #06a1ec;
+        --purple-300: #5abeff;
+        --lavender: #e6ecf3;
+        --foam: #f0f5fa;
+        --white: #fefefe;
+        --ink: #021944;
+        --ink-soft: #0467c5;
+        --wa: #22c55e;
+        --wa-dark: #16a34a;
+        --line: #d1e0f0;
+        --radius-bubble: 28px;
+        --radius-pill: 999px;
+        --shadow-soft: 0 10px 30px -12px rgba(2, 25, 68, 0.28);
+        --shadow-card: 0 4px 16px -6px rgba(2, 25, 68, 0.15);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 88px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        color: var(--ink);
+        background: var(--lavender);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      h1,
+      h2,
+      h3,
+      .display {
+        font-family: "Baloo 2", sans-serif;
+        letter-spacing: 0.2px;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* ---------- utility ---------- */
+      .container {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--purple-600);
+        outline-offset: 3px;
+        border-radius: 8px;
+      }
+
+      /* ---------- top bar ---------- */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(2, 25, 68, 0.92);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(6, 161, 236, 0.15);
+      }
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px;
+        max-width: 1120px;
+        margin: 0 auto;
+        gap: 16px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .brand img {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+      }
+      .brand span {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 700;
+        font-size: 1.15rem;
+        color: #fff;
+        letter-spacing: 0.3px;
+      }
+      .top-actions {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .info-pill {
+        display: none;
+        align-items: center;
+        gap: 6px;
+        color: var(--purple-300);
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+      .btn-wa-small {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--wa);
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.88rem;
+        padding: 10px 18px;
+        border-radius: var(--radius-pill);
+        box-shadow: 0 6px 16px -4px rgba(34, 197, 94, 0.55);
+        transition:
+          transform 0.18s ease,
+          box-shadow 0.18s ease;
+        white-space: nowrap;
+      }
+      .btn-wa-small:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 22px -4px rgba(34, 197, 94, 0.6);
+      }
+
+      @media (min-width: 720px) {
+        .info-pill {
+          display: flex;
+        }
+      }
+
+      /* ---------- hero ---------- */
+      .hero {
+        position: relative;
+        background: radial-gradient(
+          120% 140% at 50% -10%,
+          #0687db 0%,
+          #0467c5 45%,
+          #021944 100%
+        );
+        padding: 64px 24px 96px;
+        overflow: hidden;
+        isolation: isolate;
+      }
+      .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 32% 28%,
+          rgba(255, 255, 255, 0.85),
+          rgba(255, 255, 255, 0.08) 60%,
+          transparent 70%
+        );
+        filter: blur(0.3px);
+        animation: float 11s ease-in-out infinite;
+        z-index: 0;
+      }
+      .bubble.b1 {
+        width: 70px;
+        height: 70px;
+        left: 6%;
+        top: 20%;
+        animation-delay: 0s;
+      }
+      .bubble.b2 {
+        width: 34px;
+        height: 34px;
+        left: 14%;
+        top: 65%;
+        animation-delay: 1.4s;
+      }
+      .bubble.b3 {
+        width: 110px;
+        height: 110px;
+        right: 8%;
+        top: 12%;
+        animation-delay: 0.6s;
+      }
+      .bubble.b4 {
+        width: 46px;
+        height: 46px;
+        right: 16%;
+        top: 60%;
+        animation-delay: 2.2s;
+      }
+      .bubble.b5 {
+        width: 22px;
+        height: 22px;
+        left: 42%;
+        top: 8%;
+        animation-delay: 1.8s;
+      }
+      .bubble.b6 {
+        width: 58px;
+        height: 58px;
+        right: 32%;
+        top: 75%;
+        animation-delay: 0.9s;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) translateX(0);
+        }
+        50% {
+          transform: translateY(-22px) translateX(8px);
+        }
+      }
+
+      .hero-inner {
+        position: relative;
+        z-index: 1;
+        max-width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 22px;
+      }
+      .hero-logo {
+        width: 190px;
+        height: 190px;
+        border-radius: 34px;
+        box-shadow: 0 22px 50px -14px rgba(0, 0, 0, 0.55);
+        animation: bob 5.5s ease-in-out infinite;
+      }
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(0) rotate(-1.2deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(1.2deg);
+        }
+      }
+      .hero h1 {
+        color: #fff;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 800;
+        text-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      }
+      .hero p.tagline {
+        color: var(--purple-300);
+        font-size: 1.05rem;
+        font-weight: 500;
+        max-width: 520px;
+      }
+      .hero-ctas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        justify-content: center;
+        margin-top: 6px;
+      }
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, var(--wa), var(--wa-dark));
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.02rem;
+        padding: 16px 30px;
+        border-radius: var(--radius-pill);
+        box-shadow: 0 14px 30px -8px rgba(34, 197, 94, 0.55);
+        transition:
+          transform 0.18s ease,
+          box-shadow 0.18s ease;
+      }
+      .btn-primary:hover {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 18px 36px -6px rgba(34, 197, 94, 0.65);
+      }
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 16px 26px;
+        border-radius: var(--radius-pill);
+        border: 1.5px solid rgba(255, 255, 255, 0.35);
+        transition:
+          background 0.18s ease,
+          transform 0.18s ease;
+      }
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.18);
+        transform: translateY(-3px);
+      }
+
+      .hero-strip {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+      }
+      .strip-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        color: #ede7ff;
+        font-size: 0.85rem;
+        font-weight: 500;
+        padding: 9px 16px;
+        border-radius: var(--radius-pill);
+      }
+
+      .wave {
+        display: block;
+        width: 100%;
+        margin-top: -2px;
+      }
+
+      /* ---------- category nav ---------- */
+      .catnav-wrap {
+        position: sticky;
+        top: 64px;
+        z-index: 40;
+        background: rgba(244, 241, 255, 0.92);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+        padding: 12px 0;
+      }
+      .catnav {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 2px 24px;
+        scrollbar-width: none;
+      }
+      .catnav::-webkit-scrollbar {
+        display: none;
+      }
+      .chip {
+        flex: 0 0 auto;
+        background: #fff;
+        color: #0467c5;
+        font-weight: 600;
+        font-size: 0.86rem;
+        padding: 9px 16px;
+        border-radius: var(--radius-pill);
+        border: 1.5px solid var(--line);
+        transition: all 0.16s ease;
+        white-space: nowrap;
+      }
+      .chip:hover {
+        border-color: #06a1ec;
+        color: #0687db;
+      }
+      .chip.active {
+        background: #0687db;
+        color: #fff;
+        border-color: #0687db;
+        box-shadow: 0 6px 14px -4px rgba(6, 135, 219, 0.5);
+      }
+
+      /* ---------- catalog ---------- */
+      .catalog {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 56px 24px 40px;
+      }
+      .catalog-head {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .eyebrow {
+        display: inline-block;
+        color: #0687db;
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .catalog-head h2 {
+        font-size: clamp(1.6rem, 4vw, 2.3rem);
+        color: var(--ink);
+        font-weight: 800;
+      }
+      .catalog-head p {
+        color: var(--ink-soft);
+        margin-top: 8px;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .category {
+        margin-bottom: 44px;
+        scroll-margin-top: 150px;
+      }
+      .category-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .category-title .icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #06a1ec, #0467c5);
+        font-size: 1.35rem;
+        box-shadow: var(--shadow-card);
+        flex-shrink: 0;
+      }
+      .category-title h3 {
+        font-size: 1.3rem;
+        color: var(--ink);
+        font-weight: 700;
+      }
+      .category-title .count {
+        color: var(--ink-soft);
+        font-size: 0.82rem;
+        font-weight: 500;
+      }
+
+      .product-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border: 1.5px solid var(--line);
+        border-radius: var(--radius-bubble);
+        overflow: hidden;
+        box-shadow: var(--shadow-card);
+      }
+      .product-card {
+        background: #fff;
+        padding: 14px 20px;
+        border: none;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        transition: background 0.16s ease;
+      }
+      .product-card:last-child {
+        border-bottom: none;
+      }
+      .product-card:hover {
+        background: #f9f7ff;
+      }
+      .product-info {
+        min-width: 0;
+        flex: 1;
+      }
+      .product-name {
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: var(--ink);
+        line-height: 1.3;
+      }
+      .product-note {
+        font-size: 0.75rem;
+        color: var(--ink-soft);
+        margin-top: 2px;
+      }
+      .product-price {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 700;
+        color: #0467c5;
+        font-size: 0.95rem;
+        margin-top: 4px;
+        display: inline-block;
+      }
+      .product-price.consult {
+        color: var(--ink-soft);
+        font-size: 0.85rem;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .order-btn {
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--wa);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 6px 14px -4px rgba(34, 197, 94, 0.55);
+        transition:
+          transform 0.16s ease,
+          box-shadow 0.16s ease;
+      }
+      .order-btn:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 18px -3px rgba(34, 197, 94, 0.65);
+      }
+      .order-btn svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* ---------- info / footer ---------- */
+      .info-section {
+        background: var(--foam);
+        padding: 56px 24px;
+        margin-top: 20px;
+      }
+      .info-grid {
+        max-width: 1120px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 22px;
+      }
+      .info-card {
+        background: #fff;
+        border-radius: 24px;
+        padding: 24px;
+        border: 1.5px solid var(--line);
+        box-shadow: var(--shadow-card);
+      }
+      .info-card .icon {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .info-card h4 {
+        font-size: 1.02rem;
+        margin-bottom: 6px;
+        color: var(--ink);
+      }
+      .info-card p {
+        font-size: 0.88rem;
+        color: var(--ink-soft);
+        line-height: 1.5;
+      }
+      .info-card a {
+        color: var(--purple-600);
+        font-weight: 600;
+      }
+      .info-card a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        background: var(--deep);
+        color: #ede7ff;
+        padding: 44px 24px 28px;
+      }
+      .footer-inner {
+        max-width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .footer-brand img {
+        width: 38px;
+        height: 38px;
+        border-radius: 11px;
+      }
+      .footer-brand span {
+        font-family: "Baloo 2", sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #fff;
+      }
+      .footer-links {
+        display: flex;
+        gap: 28px;
+        flex-wrap: wrap;
+      }
+      .footer-links div h5 {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--purple-300);
+        margin-bottom: 10px;
+      }
+      .footer-links a,
+      .footer-links p {
+        display: block;
+        font-size: 0.9rem;
+        color: #ede7ff;
+        margin-bottom: 6px;
+        opacity: 0.9;
+      }
+      .footer-links a:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+      .footer-bottom {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 0.8rem;
+        color: var(--purple-300);
+      }
+
+      /* ---------- floating WA button ---------- */
+      .fab {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 60;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--wa);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 26px -6px rgba(34, 197, 94, 0.6);
+        animation: pulse 2.6s ease-in-out infinite;
+      }
+      .fab svg {
+        width: 28px;
+        height: 28px;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: 0 12px 26px -6px rgba(34, 197, 94, 0.6);
+        }
+        50% {
+          box-shadow:
+            0 12px 32px -4px rgba(34, 197, 94, 0.85),
+            0 0 0 10px rgba(34, 197, 94, 0.12);
+        }
+      }
+
+      @media (max-width: 768px) {
+        html {
+          scroll-padding-top: 72px;
+        }
+        .topbar-inner {
+          padding: 10px 16px;
+          gap: 8px;
+        }
+        .brand img {
+          width: 32px;
+          height: 32px;
+        }
+        .brand span {
+          font-size: 1rem;
+        }
+        .info-pill {
+          display: none !important;
+        }
+        .btn-wa-small {
+          padding: 8px 14px;
+          font-size: 0.8rem;
+        }
+
+        .catnav {
+          padding: 2px 16px;
+          gap: 6px;
+        }
+        .chip {
+          padding: 7px 12px;
+          font-size: 0.8rem;
+        }
+
+        .hero {
+          padding: 40px 16px 60px;
+        }
+        .hero-logo {
+          width: 130px;
+          height: 130px;
+        }
+        .hero h1 {
+          font-size: 1.6rem;
+        }
+        .hero p.tagline {
+          font-size: 0.95rem;
+        }
+        .btn-primary,
+        .btn-secondary {
+          width: 100%;
+          justify-content: center;
+          font-size: 0.95rem;
+          padding: 14px 20px;
+        }
+        .hero-ctas {
+          width: 100%;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .hero-strip {
+          flex-direction: column;
+          gap: 8px;
+        }
+        .strip-item {
+          font-size: 0.78rem;
+          padding: 8px 14px;
+        }
+
+        .catalog {
+          padding: 40px 16px 30px;
+        }
+        .catalog-head h2 {
+          font-size: 1.5rem;
+        }
+        .catalog-head p {
+          font-size: 0.9rem;
+        }
+        .category {
+          margin-bottom: 30px;
+          scroll-margin-top: 130px;
+        }
+        .category-title {
+          gap: 10px;
+        }
+        .category-title .icon {
+          width: 38px;
+          height: 38px;
+          font-size: 1.2rem;
+        }
+        .category-title h3 {
+          font-size: 1.1rem;
+        }
+        .category-title .count {
+          font-size: 0.75rem;
+        }
+
+        .product-card {
+          padding: 12px 14px;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+        .product-name {
+          font-size: 0.9rem;
+        }
+        .product-note {
+          font-size: 0.7rem;
+        }
+        .product-price {
+          font-size: 0.85rem;
+        }
+        .order-btn {
+          width: 40px;
+          height: 40px;
+        }
+        .order-btn svg {
+          width: 18px;
+          height: 18px;
+        }
+
+        .info-section {
+          padding: 40px 16px;
+        }
+        .info-grid {
+          gap: 14px;
+        }
+        .info-card {
+          padding: 18px;
+          border-radius: 18px;
+        }
+        .info-card .icon {
+          font-size: 1.4rem;
+        }
+        .info-card h4 {
+          font-size: 0.95rem;
+        }
+        .info-card p {
+          font-size: 0.85rem;
+        }
+
+        footer {
+          padding: 32px 16px 20px;
+        }
+        .footer-inner {
+          gap: 16px;
+          padding-bottom: 16px;
+        }
+        .footer-brand img {
+          width: 32px;
+          height: 32px;
+        }
+        .footer-brand span {
+          font-size: 1rem;
+        }
+        .footer-links {
+          gap: 18px;
+        }
+        .footer-links div h5 {
+          font-size: 0.75rem;
+          margin-bottom: 6px;
+        }
+        .footer-links a,
+        .footer-links p {
+          font-size: 0.85rem;
+          margin-bottom: 4px;
+        }
+        .footer-bottom {
+          font-size: 0.75rem;
+          gap: 6px;
+          flex-direction: column;
+        }
+
+        .fab {
+          width: 52px;
+          height: 52px;
+          right: 16px;
+          bottom: 16px;
+        }
+        .fab svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ================= TOP BAR ================= -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a href="#top" class="brand" aria-label="BARRACAS CITY CLEAN - inicio">
+          <img src="bcc.png" alt="Logo BARRACAS CITY CLEAN" />
+          <span>BARRACAS CITY CLEAN</span>
+        </a>
+        <div class="top-actions">
+          <span class="info-pill">🚚 Envíos a domicilio</span>
+          <a
+            class="btn-wa-small"
+            id="wa-top"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 32 32" width="16" height="16" fill="currentColor">
+              <path
+                d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.9 1 4 1.6 6.3 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.6 1.1 1.2-4.4-.3-.5C5.4 17.6 4.9 15.9 4.9 15 4.9 8.9 9.9 4 16 4s11.1 4.9 11.1 11-4.9 11-11.1 11zm6-8.2c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.2-.7.2-.2.3-.4.5-.6.2-.2.2-.4.3-.6.1-.2.1-.5 0-.7-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.3 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.6-.4z"
+              />
+            </svg>
+            Pedir ahora
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="bubble b1"></div>
+      <div class="bubble b2"></div>
+      <div class="bubble b3"></div>
+      <div class="bubble b4"></div>
+      <div class="bubble b5"></div>
+      <div class="bubble b6"></div>
+
+      <div class="hero-inner">
+        <img
+          class="hero-logo"
+          src="bcc.png"
+          alt="BARRACAS CITY CLEAN - productos de limpieza"
+        />
+        <h1>Tu solución integral<br />de limpieza</h1>
+        <p class="tagline">
+          Productos para el hogar, la ropa, los pisos y el auto — con precios
+          claros y pedidos directo por WhatsApp.
+        </p>
+
+        <div class="hero-ctas">
+          <a
+            class="btn-primary"
+            id="wa-hero"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor">
+              <path
+                d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.9 1 4 1.6 6.3 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.6 1.1 1.2-4.4-.3-.5C5.4 17.6 4.9 15.9 4.9 15 4.9 8.9 9.9 4 16 4s11.1 4.9 11.1 11-4.9 11-11.1 11zm6-8.2c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.2-.7.2-.2.3-.4.5-.6.2-.2.2-.4.3-.6.1-.2.1-.5 0-.7-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.3 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.6-.4z"
+              />
+            </svg>
+            Hacer un pedido por WhatsApp
+          </a>
+          <a class="btn-secondary" href="#catalogo"> Ver lista de precios ↓ </a>
+        </div>
+
+        <div class="hero-strip">
+          <span class="strip-item">🚚 Envío a domicilio</span>
+          <span class="strip-item">⏱️ Pedidos con 24/48 h de anticipación</span>
+          <span class="strip-item">🕘 Lun a vie 9–17 · Sáb 9–14</span>
+        </div>
+      </div>
+
+      <svg
+        class="wave"
+        viewBox="0 0 1440 60"
+        preserveAspectRatio="none"
+        style="height: 44px"
+      >
+        <path
+          fill="#F4F1FF"
+          d="M0,32 C240,60 480,0 720,16 C960,32 1200,58 1440,28 L1440,60 L0,60 Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- ================= CATEGORY NAV ================= -->
+    <nav class="catnav-wrap" aria-label="Categorías de productos">
+      <div class="catnav" id="catnav"></div>
+    </nav>
+
+    <!-- ================= CATALOG ================= -->
+    <main class="catalog" id="catalogo">
+      <div class="catalog-head">
+        <span class="eyebrow">Lista de precios</span>
+        <h2>Elegí tu producto y pedilo al instante</h2>
+        <p>
+          Tocá "Pedir" en el producto que necesitás: se abre WhatsApp con el
+          pedido cargado, y ahí mismo coordinás cantidad, envío y forma de pago.
+        </p>
+      </div>
+
+      <div id="catalog-root"></div>
+
+      <!-- ================= PRODUCTOS POR 5 LITROS ================= -->
+      <div
+        id="precios-5l"
+        style="
+          margin-top: 80px;
+          padding-top: 60px;
+          border-top: 2px solid var(--line);
+        "
+      >
+        <div style="text-align: center; margin-bottom: 40px">
+          <span class="eyebrow">PRODUCTOS A GRANEL</span>
+          <h2
+            style="font-size: clamp(1.6rem, 4vw, 2.3rem); margin-bottom: 12px"
+          >
+            Por litro o por 5 litros
+          </h2>
+        </div>
+
+        <!-- Tabla simple de precios -->
+        <div style="max-width: 800px; margin: 0 auto; overflow-x: auto">
+          <table style="width: 100%; border-collapse: collapse">
+            <thead>
+              <tr
+                style="
+                  background: linear-gradient(135deg, #0687db, #0467c5);
+                  color: white;
+                "
+              >
+                <th
+                  style="
+                    padding: 16px;
+                    text-align: left;
+                    font-weight: 700;
+                    border-radius: 12px 0 0 0;
+                  "
+                >
+                  Producto
+                </th>
+                <th style="padding: 16px; text-align: center; font-weight: 700">
+                  1 Litro
+                </th>
+                <th
+                  style="
+                    padding: 16px;
+                    text-align: center;
+                    font-weight: 700;
+                    border-radius: 0 12px 0 0;
+                  "
+                >
+                  5 Litros
+                </th>
+              </tr>
+            </thead>
+            <tbody id="tabla-5l-body">
+              <!-- Se llena con JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= INFO SECTION ================= -->
+    <section class="info-section">
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="icon">🚚</span>
+          <h4>Envíos a domicilio</h4>
+          <p>
+            Hacemos envíos a domicilio. Coordinamos zona y costo por WhatsApp al
+            confirmar el pedido.
+          </p>
+        </div>
+        <div class="info-card">
+          <span class="icon">⏱️</span>
+          <h4>Tiempos de entrega</h4>
+          <p>
+            Los pedidos se toman con 24/48 h de anticipación, así siempre llega
+            a tiempo y en buen estado.
+          </p>
+        </div>
+        <div class="info-card">
+          <span class="icon">🕘</span>
+          <h4>Horario de atención</h4>
+          <p>
+            Lunes a viernes de 09:00 a 17:00.<br />Sábados de 09:00 a 14:00.
+          </p>
+        </div>
+        <div class="info-card">
+          <span class="icon">📲</span>
+          <h4>Pedidos por WhatsApp</h4>
+          <p>
+            Escribinos al
+            <a id="wa-link-1" href="#" target="_blank" rel="noopener"
+              >+54 9 11 6498-4474</a
+            >.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="bcc.png" alt="Logo BARRACAS CITY CLEAN" />
+          <span>BARRACAS CITY CLEAN</span>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h5>Contacto</h5>
+            <a id="wa-link-3" href="#" target="_blank" rel="noopener"
+              >WhatsApp: +54 9 11 6498-4474</a
+            >
+            <p>Barracas, CABA</p>
+          </div>
+          <div>
+            <h5>Atención</h5>
+            <p>Lun a vie · 09:00–17:00</p>
+            <p>Sáb · 09:00–14:00</p>
+          </div>
+          <div>
+            <h5>Sitio</h5>
+            <a href="#catalogo">Lista de precios</a>
+            <a href="#top">Volver arriba</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 BARRACAS CITY CLEAN — Todos los derechos reservados</span>
+        <span>Precios sujetos a confirmación por WhatsApp</span>
+      </div>
+    </footer>
+
+    <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+    <a
+      class="fab"
+      id="wa-fab"
+      href="#"
+      target="_blank"
+      rel="noopener"
+      aria-label="Pedir por WhatsApp"
+    >
+      <svg viewBox="0 0 32 32" fill="currentColor">
+        <path
+          d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.9 1 4 1.6 6.3 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.6 1.1 1.2-4.4-.3-.5C5.4 17.6 4.9 15.9 4.9 15 4.9 8.9 9.9 4 16 4s11.1 4.9 11.1 11-4.9 11-11.1 11zm6-8.2c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.2-.7.2-.2.3-.4.5-.6.2-.2.2-.4.3-.6.1-.2.1-.5 0-.7-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.3 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.6-.4z"
+        />
+      </svg>
+    </a>
+
+    <script>
+      /* ======================= CONFIG ======================= */
+      // Número principal de WhatsApp (formato internacional sin '+', sin espacios)
+      const WHATSAPP_NUMBER = "5491164984474"; // +54 9 11 6498-4474
+
+      function waLink(message) {
+        return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      }
+
+      const GENERIC_MESSAGE =
+        "¡Hola BARRACAS CITY CLEAN! 👋 Quiero hacer un pedido, ¿me pasás disponibilidad y precios?";
+
+      /* ======================= CATALOG DATA ======================= */
+      const CATALOG = [
+        {
+          id: "jabones-liquidos",
+          name: "Jabones líquidos",
+          icon: "🧴",
+          items: [
+            { name: "Verde (tipo Ariel)", price: "$1.100" },
+            {
+              name: "Verde (tipo Ariel) - 5L",
+              price: "$5.000",
+              note: "Bidón de 5L",
+            },
+            { name: "Verde Premium (tipo Ariel)", price: "$1.300" },
+            {
+              name: "Verde Premium (tipo Ariel) - 5L",
+              price: "$6.500",
+              note: "Bidón de 5L",
+            },
+            { name: "Azul (tipo Skyp)", price: "$1.000" },
+            {
+              name: "Azul (tipo Skyp) - 5L",
+              price: "$4.800",
+              note: "Bidón de 5L",
+            },
+            { name: "Rosa (tipo Ala)", price: "$1.400" },
+          ],
+        },
+        {
+          id: "suavizantes",
+          name: "Suavizantes",
+          icon: "🌸",
+          items: [
+            { name: "Celeste (tipo Vivere)", price: "$1.300" },
+            {
+              name: "Blanco, doble fragancia",
+              price: "$1.500",
+            },
+            { name: "Rosa (tipo Ala)", price: "$1.300" },
+            { name: "Violeta (tipo Querubín)", price: "$1.300" },
+          ],
+        },
+        {
+          id: "lavandinas",
+          name: "Lavandinas",
+          icon: "🧼",
+          items: [
+            { name: "Cloro", price: "$1.200" },
+            { name: "Cloro - 5L", price: "$5.500", note: "Bidón de 5L" },
+            { name: "Lavandina", price: "$600" },
+            { name: "Lavandina - 5L", price: "$2.500", note: "Bidón de 5L" },
+            { name: "Lavandina ropa color y blanca", price: "$1.100" },
+            { name: "Lavandina en gel", price: "$1.400" },
+          ],
+        },
+        {
+          id: "detergentes",
+          name: "Detergentes",
+          icon: "🍋",
+          items: [
+            {
+              name: "Detergente Amarillo (tipo Magistral) - 1L",
+              price: "$1.400",
+            },
+            {
+              name: "Detergente Amarillo (tipo Magistral) - 5L",
+              price: "$6.500",
+              note: "Bidón de 5L",
+            },
+            {
+              name: "Detergente Verde Personalizado (Barracas City Clean), con glicerina - 1L",
+              price: "$1.500",
+            },
+            {
+              name: "Detergente Verde Personalizado (Barracas City Clean), con glicerina - 5L",
+              price: "$7.000",
+              note: "Bidón de 5L",
+            },
+          ],
+        },
+        {
+          id: "desengrasantes",
+          name: "Desengrasantes",
+          icon: "🧽",
+          items: [
+            {
+              name: "Amarillo con amoníaco 1L (1-4)",
+              price: "$4.000",
+              note: "Rendimiento: Rinde 5 litros",
+            },
+            {
+              name: "Naranja sin amoníaco 1L (1-4)",
+              price: "$4.000",
+              note: "Rendimiento: Rinde 5 litros",
+            },
+            { name: "Desengrasante en gel 1L", price: "$4.000" },
+          ],
+        },
+        {
+          id: "jabones-manos",
+          name: "Jabones líquidos para manos",
+          icon: "🫧",
+          items: [
+            { name: "Tipo Dove", price: "$1.300 / litro" },
+            { name: "Vainilla", price: "$1.300 / litro" },
+            { name: "Uva", price: "$1.300 / litro" },
+            { name: "Chicle", price: "$1.300 / litro" },
+            { name: "Manzana", price: "$1.300 / litro" },
+          ],
+        },
+        {
+          id: "ceras-piso",
+          name: "Ceras para piso",
+          icon: "✨",
+          items: [
+            { name: "Incolora", price: "$4.800 / litro" },
+            { name: "Negra", price: "$4.800 / litro" },
+            { name: "Roja", price: "$4.800 / litro" },
+            { name: "Echo en el balde", price: "$4.800 / litro" },
+          ],
+        },
+        {
+          id: "auto",
+          name: "Para el auto",
+          icon: "🚗",
+          items: [
+            { name: "Shampoo azul", price: "$1.700", note: "Por litro" },
+            { name: "Silicona", price: "$8.000", note: "1L" },
+            { name: "Revividor", price: "$5.600", note: "1L" },
+            {
+              name: "Limpia motor",
+              price: "$4.000",
+              note: "1L · Rinde 2 litros",
+            },
+          ],
+        },
+        {
+          id: "otros-productos",
+          name: "Otros productos",
+          icon: "🧺",
+          items: [
+            { name: "Quita manchas", price: "$3.200" },
+            { name: "Cif crema", price: "$4.600", note: "1L" },
+          ],
+        },
+        {
+          id: "concentrados-piso",
+          name: "Concentrados para piso - 5L",
+          icon: "💧",
+          items: [
+            { name: "Chicle", price: "$2.700" },
+            { name: "Marina", price: "$2.700" },
+            { name: "Procenex", price: "$2.700" },
+            { name: "Lisoford", price: "$2.700" },
+            { name: "Lavanda", price: "$2.700" },
+            { name: "Bebé", price: "$2.700" },
+            { name: "Arpeg", price: "$2.700" },
+            { name: "Cherry", price: "$2.700" },
+            { name: "Pino", price: "$2.700" },
+            { name: "Summer", price: "$3.500" },
+            { name: "Melón", price: "$2.700" },
+            { name: "Bamboo", price: "$2.700" },
+            { name: "Uva", price: "$2.700" },
+            { name: "Limón", price: "$2.700" },
+            { name: "Manzana", price: "$2.700" },
+            { name: "Papaya", price: "$2.700" },
+            { name: "Jazmín", price: "$2.700" },
+            { name: "Vainilla", price: "$2.700" },
+            { name: "Chicle", price: "$2.752" },
+          ],
+        },
+        {
+          id: "otros-limpieza",
+          name: "Otros de limpieza y cuidado",
+          icon: "🧹",
+          items: [
+            { name: "Quita sarro", price: "$5.000", note: "1L" },
+            { name: "Perfumina textil", price: "$6.200" },
+            { name: "Limpia vidrios", price: "$8.000", note: "1L · Rinde 1+9" },
+            { name: "Shampoo para perros", price: "$1.700", note: "1L" },
+            { name: "Shampoo", price: "$1.700", note: "1L" },
+            { name: "Acondicionador", price: "$1.700", note: "1L" },
+            { name: "Insecticida", price: "$1.300", note: "1L" },
+          ],
+        },
+      ];
+
+      /* ======================= PRODUCTOS POR 5 LITROS ======================= */
+      const PRODUCTOS_5L = [
+        { nombre: "Verde (tipo Ariel)", precio1L: 1100, precio5L: 5000 },
+        {
+          nombre: "Verde Premium (tipo Ariel)",
+          precio1L: 1300,
+          precio5L: 6500,
+        },
+        { nombre: "Azul (tipo Skyp)", precio1L: 1000, precio5L: 4800 },
+        {
+          nombre: "Detergente Amarillo (tipo Magistral)",
+          precio1L: 1400,
+          precio5L: 6500,
+        },
+        {
+          nombre:
+            "Detergente Verde Personalizado (Barracas City Clean), con glicerina",
+          precio1L: 1500,
+          precio5L: 7000,
+        },
+        { nombre: "Lavandina", precio1L: 600, precio5L: 2500 },
+        { nombre: "Cloro", precio1L: 1200, precio5L: 5500 },
+      ];
+
+      /* ======================= RENDER ======================= */
+      const waIcon = `<svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.9 1 4 1.6 6.3 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.6 1.1 1.2-4.4-.3-.5C5.4 17.6 4.9 15.9 4.9 15 4.9 8.9 9.9 4 16 4s11.1 4.9 11.1 11-4.9 11-11.1 11zm6-8.2c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.2-.7.2-.2.3-.4.5-.6.2-.2.2-.4.3-.6.1-.2.1-.5 0-.7-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.3 2.4 3.7 5.9 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.1-.3-.2-.6-.4z"/></svg>`;
+
+      function escapeHtml(str) {
+        return str
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+      }
+
+      function buildOrderMessage(productName, price) {
+        const priceText = price ? ` (${price})` : "";
+        return `¡Hola BARRACAS CITY CLEAN! 👋 Quiero pedir:\n• ${productName}${priceText}\nCantidad: \n\n¿Me confirmás disponibilidad y el costo de envío?`;
+      }
+
+      function renderCatalog() {
+        const root = document.getElementById("catalog-root");
+        const nav = document.getElementById("catnav");
+        let html = "";
+        let navHtml = "";
+
+        CATALOG.forEach((cat, idx) => {
+          navHtml += `<a href="#${cat.id}" class="chip" data-cat="${cat.id}">${cat.icon} ${cat.name}</a>`;
+
+          html += `<section class="category" id="${cat.id}">
+      <div class="category-title">
+        <span class="icon">${cat.icon}</span>
+        <div>
+          <h3>${cat.name}</h3>
+          <span class="count">${cat.items.length} producto${cat.items.length !== 1 ? "s" : ""}${cat.note ? " · " + cat.note : ""}</span>
+        </div>
+      </div>
+      <div class="product-grid">`;
+
+          cat.items.forEach((item) => {
+            const msg = buildOrderMessage(
+              item.name,
+              item.consult ? null : item.price,
+            );
+            const link = waLink(msg);
+            const priceClass = item.consult
+              ? "product-price consult"
+              : "product-price";
+            html += `
+        <div class="product-card">
+          <div class="product-info">
+            <div class="product-name">${escapeHtml(item.name)}</div>
+            ${item.note ? `<div class="product-note">${escapeHtml(item.note)}</div>` : ""}
+            <div class="${priceClass}">${escapeHtml(item.price)}</div>
+          </div>
+          <a class="order-btn" href="${link}" target="_blank" rel="noopener" aria-label="Pedir ${escapeHtml(item.name)} por WhatsApp">
+            ${waIcon}
+          </a>
+        </div>`;
+          });
+
+          html += `</div></section>`;
+        });
+
+        root.innerHTML = html;
+        nav.innerHTML = navHtml;
+      }
+
+      function renderTabla5L() {
+        const tbody = document.getElementById("tabla-5l-body");
+        let html = "";
+
+        PRODUCTOS_5L.forEach((prod, idx) => {
+          const rowBg = idx % 2 === 0 ? "#fff" : "#f9f7ff";
+          html += `
+            <tr style="background: ${rowBg}; border-bottom: 1px solid var(--line);">
+              <td style="padding: 14px 16px; font-weight: 600; color: #021944;">${escapeHtml(prod.nombre)}</td>
+              <td style="padding: 14px 16px; text-align: center; font-weight: 700; color: #021944; font-size: 1rem;">$${prod.precio1L}</td>
+              <td style="padding: 14px 16px; text-align: center; font-weight: 700; color: #021944; font-size: 1rem;">$${prod.precio5L}</td>
+            </tr>`;
+        });
+
+        tbody.innerHTML = html;
+      }
+
+      renderCatalog();
+      renderTabla5L();
+
+      /* ======================= GENERIC WHATSAPP LINKS ======================= */
+      document.querySelectorAll("#wa-top, #wa-hero, #wa-fab").forEach((el) => {
+        el.href = waLink(GENERIC_MESSAGE);
+      });
+      document.getElementById("wa-link-1").href = waLink(GENERIC_MESSAGE);
+      document.getElementById("wa-link-3").href = waLink(GENERIC_MESSAGE);
+
+      /* ======================= ACTIVE CHIP ON SCROLL ======================= */
+      const chips = () => document.querySelectorAll(".chip");
+      const sections = () => document.querySelectorAll(".category");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              chips().forEach((c) =>
+                c.classList.toggle("active", c.dataset.cat === id),
+              );
+            }
+          });
+        },
+        { rootMargin: "-160px 0px -70% 0px", threshold: 0 },
+      );
+
+      sections().forEach((s) => observer.observe(s));
+    </script>
+  </body>
+</html>
